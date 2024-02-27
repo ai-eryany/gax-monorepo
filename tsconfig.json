@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "useDefineForClassFields": true,
+    "lib": ["ES2015", "DOM", "DOM.Iterable"],
+    "module": "ES2015",
+    "skipLibCheck": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@theme/*": ["src/domains/theme/*"],
+      "@auth/*": ["src/domains/auth/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@assets/*": ["src/assets/*"],
+      "@models/*": ["src/models/*"],
+      "@locale/*": ["src/locale/*"],
+      "@structures/*": ["src/structures/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@store": ["src/store.ts"],
+      "@api": ["src/api.ts"],
+      "@constants": ["src/constants.ts"],
+      "@panda/core": ["packages/@/panda-core/index.ts"],
+
+      // Fallbacks
+      "@domains/*": ["src/domains/*"],
+
+      // Big Fallback
+      "@src/*": ["src/*"]
+    },
+
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src", "packages", "config.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
