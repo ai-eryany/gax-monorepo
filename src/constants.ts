@@ -1,28 +1,28 @@
 // Types
 import { Themes } from '@interfaces/utils';
 
-export const themes: Themes = {
-  light: 'light',
-  dark: 'dark',
+export const THEMES: Themes = {
+  LIGHT: 'LIGHT',
+  DARK: 'DARK',
 };
 
-export const routes = {
-  index: {
-    url: '/',
+export const ROUTES = {
+  INDEX: {
+    URL: '/',
   },
-  about: {
-    url: '/about',
+  ABOUT: {
+    URL: '/about',
   },
-  contact: {
-    url: '/contact',
+  CONTACT: {
+    URL: '/contact',
   },
-  notFound: {
-    url: '/*',
+  NOT_FOUND: {
+    URL: '/*',
   },
-  constructions: {
-    url: '/constructions',
+  CONSTRUCTIONS: {
+    URL: '/constructions',
   },
-  test: {
-    url: '/test',
+  TEST: {
+    URL: '/test',
   },
 };

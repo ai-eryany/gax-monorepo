@@ -1,15 +1,15 @@
 import { Maybe } from '@panda/core';
 
 export type Themes = {
-  dark: Maybe<'dark'>;
-  light: Maybe<'light'>;
+  LIGHT: Maybe<'LIGHT'>;
+  DARK: Maybe<'DARK'>;
 };
 
 export type Lang = Maybe<'ar' | 'en'>;
 
 export type Dir = Maybe<'ltr' | 'rtl'>;
 
-export type Theme = Maybe<'light' | 'dark'>;
+export type Theme = Maybe<'LIGHT' | 'DARK'>;
 
 export type Title = Maybe<string>;
 

@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 import * as R from 'ramda';
 
 // Constants
-import { routes } from '@constants';
+import { ROUTES } from '@constants';
 
 // Functions
 import { clx } from '@panda/core';
@@ -23,27 +23,33 @@ export default function NavBar() {
 
   const coupledRoutes: Navigations = {
     index: {
-      ...routes.index,
+      ...ROUTES.INDEX,
+      url: ROUTES.INDEX.URL,
       name: pageTitles?.index,
     },
     about: {
-      ...routes.about,
+      ...ROUTES.ABOUT,
+      url: ROUTES.ABOUT.URL,
       name: pageTitles?.about,
     },
     contact: {
-      ...routes.contact,
+      ...ROUTES.CONTACT,
+      url: ROUTES.CONTACT.URL,
       name: pageTitles?.contact,
     },
     notFound: {
-      ...routes.notFound,
+      ...ROUTES.NOT_FOUND,
+      url: ROUTES.NOT_FOUND.URL,
       name: pageTitles?.notFound,
     },
     constructions: {
-      ...routes.constructions,
+      ...ROUTES.CONSTRUCTIONS,
+      url: ROUTES.CONSTRUCTIONS.URL,
       name: pageTitles?.constructions,
     },
     test: {
-      ...routes.test,
+      ...ROUTES.TEST,
+      url: ROUTES.TEST.URL,
       name: pageTitles?.test,
     },
   };

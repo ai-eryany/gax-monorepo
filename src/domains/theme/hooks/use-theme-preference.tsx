@@ -7,19 +7,19 @@ type Props = Pick<Store, 'setTheme'>;
 export default function useThemePreference(props: Props) {
   const { setTheme } = props;
 
-  const isDarkInStorage = Storage.get('theme') === 'dark';
-  const isLightInStorage = Storage.get('theme') === 'light';
+  const isDarkInStorage = Storage.get('THEME') === 'DARK';
+  const isLightInStorage = Storage.get('THEME') === 'LIGHT';
   const isPreferingDark = window.matchMedia(
     '(prefers-color-scheme: dark)'
   ).matches;
 
   useEffect(() => {
     if (isDarkInStorage || (isPreferingDark && !isLightInStorage)) {
-      setTheme('dark');
-      Storage.init('theme', 'dark');
+      setTheme('DARK');
+      Storage.init('THEME', 'DARK');
     } else {
-      setTheme('light');
-      Storage.init('theme', 'light');
+      setTheme('LIGHT');
+      Storage.init('THEME', 'LIGHT');
     }
   }, [setTheme, isDarkInStorage, isLightInStorage, isPreferingDark]);
 

@@ -11,8 +11,8 @@ import {
 } from 'react-router-dom';
 
 // Config && Constants
-import { config } from 'config';
-import { routes } from './constants';
+import { config } from '@config';
+import { ROUTES } from '@constants';
 
 // Structure
 import Structure from './structure';
@@ -49,37 +49,37 @@ const index: RouteObject = {
 };
 
 const about: RouteObject = {
-  path: routes.about.url,
+  path: ROUTES.ABOUT.URL,
   errorElement: <AboutError />,
   element: <About />,
 };
 
 const contact: RouteObject = {
-  path: routes.contact.url,
+  path: ROUTES.CONTACT.URL,
   errorElement: <ContactError />,
   element: <Contact />,
 };
 
 const notFound: RouteObject = {
-  path: routes.notFound.url,
+  path: ROUTES.NOT_FOUND.URL,
   errorElement: <NotFoundError />,
   element: <NotFound />,
 };
 
 const constructions: RouteObject = {
-  path: routes.constructions.url,
+  path: ROUTES.CONSTRUCTIONS.URL,
   errorElement: <ConstructionsError />,
   element: <Constructions />,
 };
 
 const test: RouteObject = {
-  path: routes.test.url,
+  path: ROUTES.TEST.URL,
   errorElement: <TestError />,
   element: <Test />,
 };
 
 const structure: RouteObject = {
-  path: routes.index.url,
+  path: ROUTES.INDEX.URL,
   element: <Structure />,
   children: [index, about, contact, notFound, constructions, test],
 };
