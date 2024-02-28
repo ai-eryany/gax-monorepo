@@ -5,6 +5,9 @@ import * as R from 'ramda';
 // Locale
 import locale from '@locale/locale';
 
+// Config
+import { config } from 'config';
+
 // Types
 import { Language, User } from '@interfaces/core';
 import { Theme, Lang, Dir, Title } from '@interfaces/utils';
@@ -47,7 +50,7 @@ const useStore = create<Store>((set) => ({
   setLanguage: (lang) =>
     set(() => ({ language: R.equals('en', lang) ? locale?.en : locale?.ar })),
 
-  title: 'Panda',
+  title: config.appName,
   setTitle: (title) => set(() => ({ title })),
 
   pageTitle: '',

@@ -50,19 +50,22 @@ export default function NavBar() {
 
   return (
     <Layout>
-      <nav>
+      <nav className={clx('w-full')}>
         <ul className={clx('flex justify-between items-center')}>
           {R.values(coupledRoutes).map((route) => (
             <li
               key={nanoid()}
               className={clx(
                 'flex',
-                'bg-slate-300 rounded shadow',
+                'bg-tertiary rounded shadow',
                 'transition-all duration-300',
                 'hover:bg-slate-700 hover:text-white'
               )}
             >
-              <Link to={route?.url ? route.url : ''} className={clx('p-5')}>
+              <Link
+                to={route?.url ? route.url : ''}
+                className={clx('px-4 py-2', 'text-text')}
+              >
                 {route?.name}
               </Link>
             </li>

@@ -8,6 +8,13 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#000000',
+        secondary: '#02152d',
+        tertiary: '#0873ff',
+        quinary: '#f8bc04',
+        text: '#ffffff',
+      },
       maxWidth: {
         wrapper: '1280px',
       },

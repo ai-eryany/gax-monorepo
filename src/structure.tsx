@@ -57,7 +57,9 @@ export default function Structure() {
       </Helmet>
       <SWRConfig value={{ fetcher, suspense: true }}>
         {/* Header */}
-        <header className={clx('fixed z-10 w-full')}>{/* <NavBar /> */}</header>
+        <header className={clx('fixed z-10 w-full')}>
+          <NavBar />
+        </header>
         {/* Header ends */}
 
         {/* Main */}

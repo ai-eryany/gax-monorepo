@@ -1,5 +1,5 @@
 export const config = {
   api: '',
-  appName: 'Panda',
-  appTag: 'panda',
+  appName: 'Gax',
+  appTag: 'gax',
 };
