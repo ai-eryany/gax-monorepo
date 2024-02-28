@@ -5,7 +5,7 @@ import { clx, Storage } from '@panda/core';
 import { Flex } from '@panda/core';
 
 // constants
-import { themes } from '@constants';
+import { THEMES } from '@constants';
 
 // store
 import useStore from '@store';
@@ -15,12 +15,12 @@ export default function ChangeTheme() {
   const setTheme = useStore((store) => store.setTheme);
 
   const switchThemes = () => {
-    if (theme === themes.dark) {
-      setTheme(themes.light);
-      Storage.set('theme', themes.light);
+    if (theme === THEMES.DARK) {
+      setTheme(THEMES.LIGHT);
+      Storage.set('THEME', THEMES.LIGHT);
     } else {
-      setTheme(themes.dark);
-      Storage.set('theme', themes.dark);
+      setTheme(THEMES.DARK);
+      Storage.set('THEME', THEMES.DARK);
     }
   };
 

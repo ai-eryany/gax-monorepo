@@ -6,7 +6,7 @@ import * as R from 'ramda';
 import locale from '@locale/locale';
 
 // Config
-import { config } from 'config';
+import { config } from '@config';
 
 // Types
 import { Language, User } from '@interfaces/core';
@@ -53,7 +53,7 @@ const useStore = create<Store>((set) => ({
   title: config.appName,
   setTitle: (title) => set(() => ({ title })),
 
-  pageTitle: '',
+  pageTitle: 'Starting -_-',
   setPageTitle: (pageTitle) => set(() => ({ pageTitle })),
 
   theme: undefined,
