@@ -3,12 +3,12 @@
 ## What is this project about?
 
 Well, this is kinda my portfolio, finally after years in the programming field I have decided to create My portfolio.
-Really excited about this project. it will include many great things.
+Excited about this project. it will include many great things.
 
 ## I didn't know what to write here, so I wrote some code to explain it. I hope it helps.
 
 ```TS
-// Types are decalred globaly, no need to import them
+// Types are declared globally, no need to import them
 import { isEmpty, isNil, apply, equals } from 'ramda';
 
 const errorBoundary = (e: Error) => console.log(e.message)
@@ -35,8 +35,8 @@ export const init = () =>
    everywhere.
 3. Nice animations just for fun.
 
-I think this is all the things the project will include for now, maybe I will add another section to write about general things  
-in programming, Dev life and stuff like that. you know, **how to not go crazy as a web dev**.
+I think these are all the things the project will include for now, maybe I will add another section to write about general things  
+in programming, Dev life, and stuff like that. you know, **how to not go crazy as a web dev**.
 
 ## Application Flowchart and Diagram
 
@@ -48,7 +48,7 @@ TODO: Use this tool to implement it https://excalidraw.com/
 2. Vite
 
 along with the cool boring **library** React, you can check the `package.json` file to see all the packages I am using.  
-Oh yea, almost forgot to mention this, I am using some kind of mono repo approach where I write my own packages as I go.
+Oh yeah, almost forgot to mention this, I am using some kind of mono-repo approach where I write my packages as I go.
 you can find them in `packages`.  
 why write them in a separate folder? go through the code base and you will understand.
 
