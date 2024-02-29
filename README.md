@@ -40,7 +40,9 @@ in programming, Dev life, and stuff like that. you know, **how to not go crazy a
 
 ## Application Flowchart and Diagram
 
-TODO: Use this tool to implement it https://excalidraw.com/
+I figured that there is no need for an application flowchart nor other diagrams, so I just created a small and  
+simple System Requirement to remind me of what I need to create.  
+can be found in `docs` directory.
 
 ## Tech stack:
 
