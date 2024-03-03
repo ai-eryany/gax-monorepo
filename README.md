@@ -61,7 +61,34 @@ TODO: Document the project configuration.
 
 ## Git Configuration:
 
-TODO: Document the git strategy you will implement.
+### Git branches naming convention
+
+        Format: github_username/feature_name/issue_name
+
+### Git commits naming convention
+
+- Adding New features:  
+   "Add: navbar languages menu"
+
+---
+
+- Fixing old features:  
+  "Fix: navbar horizontal scrollbar bug"
+
+---
+
+- Removing old features:  
+  "Remove: navbar background color"
+
+---
+
+- Updating old features:  
+  "Update: navbar width"
+
+---
+
+- Combinations:  
+  "Add: navbar langauges menu | Fix: navbar horizontal scrollbar bug | Update: navbar width"
 
 ## Folder Structure:
 
