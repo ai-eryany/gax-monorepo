@@ -1,9 +1,11 @@
 // Layout
-import Layout from './layout';
+import { HeaderLayout } from './layout';
 
 // Types
 import { Props } from '@gax/types';
 
-export default function Header(props: Props<'header'>) {
-  return <Layout {...props}></Layout>;
+function Header(props: Props<'header'>) {
+  return <HeaderLayout {...props}></HeaderLayout>;
 }
+
+export { Header };

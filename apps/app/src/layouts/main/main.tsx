@@ -1,9 +1,15 @@
 // Layout
-import Layout from './layout';
+import { MainLayout } from './layout';
 
 // Types
 import { Props } from '@gax/types';
 
-export default function Main(props: Props<'main'>) {
-  return <Layout {...props}>{props.children}</Layout>;
+function Main(props: Props<'main'>) {
+  return (
+    <MainLayout {...props}>
+      <main>{props.children}</main>
+    </MainLayout>
+  );
 }
+
+export { Main };

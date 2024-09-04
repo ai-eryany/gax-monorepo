@@ -4,7 +4,7 @@ import { Base, Container } from '@gax/ui';
 // Types
 import { Props } from '@gax/types';
 
-export default function Layout(props: Props<'footer'>) {
+function FooterLayout(props: Props<'footer'>) {
   return (
     <footer {...props}>
       <Base>
@@ -13,3 +13,5 @@ export default function Layout(props: Props<'footer'>) {
     </footer>
   );
 }
+
+export { FooterLayout };

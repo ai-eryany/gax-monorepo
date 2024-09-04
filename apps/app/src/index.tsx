@@ -20,7 +20,7 @@ import {
 } from '@pages';
 
 // Structure
-import { Layout } from '@layouts';
+import { App } from '@app';
 
 // Constants
 import { ROUTES } from '@constants';
@@ -52,14 +52,14 @@ const notFound: RouteObject = {
   errorElement: <NotFoundError />,
 };
 
-const layout: RouteObject = {
+const app: RouteObject = {
   path: ROUTES.HOME.URL,
-  element: <Layout />,
+  element: <App />,
   children: [home, about, contact, notFound],
 };
 
 createRoot(document.getElementById(config?.appTag || '')!).render(
   <StrictMode>
-    <RouterProvider router={createBrowserRouter([layout])} />
+    <RouterProvider router={createBrowserRouter([app])} />
   </StrictMode>
 );
