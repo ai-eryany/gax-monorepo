@@ -6,10 +6,12 @@ import { Props } from '@gax/types';
 
 const modelStyle = cntl`relative`;
 
-export default function Base(props: Props<'div'>) {
+function Section(props: Props<'section'>) {
   return (
-    <div {...props} className={clx(props.className, modelStyle)}>
+    <section {...props} className={clx(props.className, modelStyle)}>
       {props.children}
-    </div>
+    </section>
   );
 }
+
+export { Section };
