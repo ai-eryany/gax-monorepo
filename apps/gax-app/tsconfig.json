@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "outDir": "dist",
+
+    "paths": {
+      "@app": ["src/gax.app.tsx"],
+      "@layouts": ["src/layouts"],
+      "@pages": ["src/pages"],
+      "@configs": ["src/configs"],
+      "@stores": ["src/stores"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

@@ -1,0 +1,98 @@
+{
+  "folders": [
+    {
+      "path": "packages/gax-constants",
+    },
+    {
+      "path": "packages/gax-hooks",
+    },
+    {
+      "path": "packages/gax-types",
+    },
+    {
+      "path": "packages/gax-ui",
+    },
+    {
+      "path": "packages/gax-utils",
+    },
+    {
+      "path": "apps/gax-app",
+    },
+    {
+      "path": "doc",
+    },
+    {
+      "path": ".",
+    },
+  ],
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build constants",
+        "type": "shell",
+        "command": "nx build @gax/constants",
+      },
+      {
+        "label": "run constants",
+        "type": "shell",
+        "command": "nx dev @gax/constants",
+      },
+      {
+        "label": "build hooks",
+        "type": "shell",
+        "command": "nx build @gax/hooks",
+      },
+      {
+        "label": "run hooks",
+        "type": "shell",
+        "command": "nx dev @gax/hooks",
+      },
+      {
+        "label": "build types",
+        "type": "shell",
+        "command": "nx build @gax/types",
+      },
+      {
+        "label": "run types",
+        "type": "shell",
+        "command": "nx dev @gax/types",
+      },
+      {
+        "label": "build ui",
+        "type": "shell",
+        "command": "nx build @gax/ui",
+      },
+      {
+        "label": "run ui",
+        "type": "shell",
+        "command": "nx dev @gax/ui",
+      },
+      {
+        "label": "build utils",
+        "type": "shell",
+        "command": "nx build @gax/utils",
+      },
+      {
+        "label": "run utils",
+        "type": "shell",
+        "command": "nx dev @gax/utils",
+      },
+      {
+        "label": "build app",
+        "type": "shell",
+        "command": "nx build @gax/app",
+      },
+      {
+        "label": "run app",
+        "type": "shell",
+        "command": "nx dev @gax/app",
+      },
+      {
+        "label": "build project",
+        "type": "shell",
+        "command": "nx run-many -t build",
+      },
+    ],
+  },
+}
