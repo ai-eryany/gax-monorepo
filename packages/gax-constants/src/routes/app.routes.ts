@@ -1,33 +1,34 @@
-import { Routes } from '@gax/types';
+// Types
+import { Maybe, Routes } from '@gax/types';
 
-const ROUTES: Routes = {
+const ROUTES: Maybe<Routes> = {
   HOME: {
     URL: '/',
-    NAME: 'HOME',
+    NAME: 'Home',
   },
   HOME_ALT: {
     URL: '/home',
-    NAME: 'HOME ALT',
+    NAME: 'Home Alt',
   },
   HOME_ALT2: {
     URL: '/index',
-    NAME: 'HOME ALT2',
+    NAME: 'Home Alt2',
   },
   ABOUT: {
     URL: '/about',
-    NAME: 'ABOUT',
+    NAME: 'About',
   },
   CONTACT: {
     URL: '/contact',
-    NAME: 'CONTACT',
+    NAME: 'Contact',
   },
   BLOGS: {
     URL: '/blogs',
-    NAME: 'BLOGS',
+    NAME: 'Blogs',
   },
   PROJECTS: {
     URL: '/projects',
-    NAME: 'PROJECTS',
+    NAME: 'Projects',
   },
   '*': {
     URL: '/*',

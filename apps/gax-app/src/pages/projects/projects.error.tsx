@@ -1,5 +1,13 @@
+import { Page, Base, Container } from '@gax/ui';
+
 function ProjectsError() {
-  return null;
+  return (
+    <Base>
+      <Page>
+        <Container>Error Page</Container>
+      </Page>
+    </Base>
+  );
 }
 
 export { ProjectsError };

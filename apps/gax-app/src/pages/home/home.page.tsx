@@ -1,14 +1,22 @@
+// UI
+import { Page, Base, Container } from '@gax/ui';
+
 // Components
-import { PrimaryLink } from '@gax/ui';
+import { Hero } from '@components';
 
 // constants
 import { ROUTES } from '@gax/constants';
 
 function HomePage() {
   return (
-    <h1>
-      <PrimaryLink to={ROUTES.ABOUT.URL}>{ROUTES.ABOUT.NAME}</PrimaryLink>
-    </h1>
+    <Base>
+      <Page>
+        <Container>
+          <h1>{ROUTES?.HOME?.NAME}</h1>
+          <Hero />
+        </Container>
+      </Page>
+    </Base>
   );
 }
 

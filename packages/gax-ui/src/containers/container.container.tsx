@@ -19,8 +19,4 @@ function Container(props: Props<'div'>) {
   );
 }
 
-function folder() {
-  return null;
-}
-
 export { Container };

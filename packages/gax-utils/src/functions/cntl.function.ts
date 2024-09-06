@@ -1,3 +1,3 @@
 import cntl from 'cntl';
 
-export default cntl;
+export { cntl };

@@ -1,3 +1,3 @@
 import clx from 'classnames';
 
-export default clx;
+export { clx };

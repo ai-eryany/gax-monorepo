@@ -74,4 +74,4 @@ const Err = {
   message,
 };
 
-export default Err;
+export { Err };

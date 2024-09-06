@@ -15,4 +15,4 @@ const Str = {
   join,
 };
 
-export default Str;
+export { Str };

@@ -3,23 +3,17 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Outlet } from 'react-router-dom';
 
 // Layouts
-import {
-  Header,
-  HeaderLayout,
-  Main,
-  MainLayout,
-  Footer,
-  FooterLayout,
-} from '@layouts';
+import { Header, Main, Footer, Nav } from '@layouts';
 
 // UI
-import { Nav } from '@layouts';
+import { HeaderImg } from '@components';
 
 // Hooks
-import { usePathNormalizer } from '@gax/hooks';
+import { usePathNormalizer, useScroll } from '@gax/hooks';
 
 function App() {
   usePathNormalizer();
+  useScroll();
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
@@ -27,19 +21,14 @@ function App() {
         <title>GAX</title>
         <body className="bg-gray-100" />
       </Helmet>
-      <HeaderLayout>
-        <Header>
-          <Nav />
-        </Header>
-      </HeaderLayout>
-      <MainLayout>
-        <Main>
-          <Outlet />
-        </Main>
-      </MainLayout>
-      <FooterLayout>
-        <Footer />
-      </FooterLayout>
+      <Header>
+        <HeaderImg src="/lambda-half-life.png" />
+        <Nav />
+      </Header>
+      <Main>
+        <Outlet />
+      </Main>
+      <Footer />
     </HelmetProvider>
   );
 }

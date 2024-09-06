@@ -1,5 +1,5 @@
-export { Base } from './base';
-export { Container } from './container';
-export { Img } from './img';
-export { Page } from './page';
-export { Section } from './section';
+export { Base } from './base.container';
+export { Container } from './container.container';
+export { Img } from './img.container';
+export { Page } from './page.container';
+export { Section } from './section.container';

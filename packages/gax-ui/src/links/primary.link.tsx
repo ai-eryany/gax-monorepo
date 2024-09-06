@@ -11,40 +11,38 @@ type P = {
   isActive?: Maybe<boolean>;
 };
 
-const styleMain = cntl`
-  block
-  cursor-pointer 
-  text-[15px] 
+const modelStyle = cntl`
+  relative
+  cursor-pointer
+  text-[15px]
   font-bold
 `;
 
-const fontColor = cntl`
+const fontStyle = cntl`
   text-gray-500 
 `;
 
-const activeFontColor = cntl`
+const activeFontStyle = cntl`
   text-[#007bff]
 `;
 
 const hoverStyle = cntl`
-  hover:text-[#007bff] 
+  hover:text-[#007bff]
 `;
 
 function PrimaryLink(props: Props<'a', LinkProps & P>) {
   return (
-    <li className={clx('max-lg:border-b max-lg:py-3')}>
-      <Link
-        {...props}
-        className={clx(
-          styleMain,
-          props.isActive ? activeFontColor : fontColor,
-          hoverStyle,
-          props.className
-        )}
-      >
-        {props.children}
-      </Link>
-    </li>
+    <Link
+      {...props}
+      className={clx(
+        modelStyle,
+        props.isActive ? activeFontStyle : fontStyle,
+        hoverStyle,
+        props.className
+      )}
+    >
+      {props.children}
+    </Link>
   );
 }
 

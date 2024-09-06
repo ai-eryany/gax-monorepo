@@ -45,4 +45,4 @@ const Imm = {
   mergeArr,
 };
 
-export default Imm;
+export { Imm };

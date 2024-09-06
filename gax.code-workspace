@@ -93,6 +93,16 @@
         "type": "shell",
         "command": "nx run-many -t build",
       },
+      {
+        "label": "clean project",
+        "type": "shell",
+        "command": "nx run-many -t clean",
+      },
+      {
+        "label": "reset project",
+        "type": "shell",
+        "command": "nx run-many -t reset",
+      },
     ],
   },
 }

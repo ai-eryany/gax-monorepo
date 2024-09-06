@@ -1,3 +1,3 @@
-export { Header, HeaderLayout, Nav } from './header';
-export { Main, MainLayout } from './main';
-export { Footer, FooterLayout } from './footer';
+export { Header, Nav } from './header';
+export { Main } from './main';
+export { Footer } from './footer';

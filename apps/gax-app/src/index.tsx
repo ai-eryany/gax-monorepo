@@ -9,14 +9,19 @@ import {
 
 // Pages
 import {
-  AboutError,
-  AboutPage,
-  ContactError,
-  ContactPage,
-  HomeError,
   HomePage,
-  NotFoundError,
+  HomeError,
+  AboutPage,
+  AboutError,
+  ContactPage,
+  ContactError,
+  BlogsPage,
+  BlogsError,
+  ProjectsPage,
+  ProjectsError,
   NotFoundPage,
+  NotFoundError,
+  TestPage,
 } from '@pages';
 
 // Structure
@@ -46,17 +51,36 @@ const contact: RouteObject = {
   errorElement: <ContactError />,
 };
 
+const blogs: RouteObject = {
+  path: ROUTES.BLOGS.URL,
+  element: <BlogsPage />,
+  errorElement: <BlogsError />,
+};
+
+const projects: RouteObject = {
+  path: ROUTES.PROJECTS.URL,
+  element: <ProjectsPage />,
+  errorElement: <ProjectsError />,
+};
+
 const notFound: RouteObject = {
   path: ROUTES['*'].URL,
   element: <NotFoundPage />,
   errorElement: <NotFoundError />,
 };
 
+const test: RouteObject = {
+  path: '/test',
+  element: <TestPage />,
+};
+
 const app: RouteObject = {
   path: ROUTES.HOME.URL,
   element: <App />,
-  children: [home, about, contact, notFound],
+  children: [home, about, contact, blogs, projects, notFound, test],
 };
+
+console.log(ROUTES.BLOGS.NAME);
 
 createRoot(document.getElementById(config?.appTag || '')!).render(
   <StrictMode>

@@ -7,16 +7,20 @@ import * as R from 'ramda';
 function usePathname() {
   const { pathname } = useLocation();
   const [isHome, setIsHome] = useState(R.equals(pathname, ROUTES?.HOME?.URL));
-  const [isAbout, setIsAbout] = useState(R.equals(pathname, ROUTES.ABOUT.URL));
-  const [isContact, setIsContact] = useState(
-    R.equals(pathname, ROUTES.CONTACT.URL)
+  const [isAbout, setIsAbout] = useState(
+    R.equals(pathname, ROUTES?.ABOUT?.URL)
   );
-  const [isBlogs, setIsBlogs] = useState(R.equals(pathname, ROUTES.BLOGS.URL));
+  const [isContact, setIsContact] = useState(
+    R.equals(pathname, ROUTES?.CONTACT?.URL)
+  );
+  const [isBlogs, setIsBlogs] = useState(
+    R.equals(pathname, ROUTES?.BLOGS?.URL)
+  );
   const [isProjects, setIsProjects] = useState(
-    R.equals(pathname, ROUTES.PROJECTS.URL)
+    R.equals(pathname, ROUTES?.PROJECTS?.URL)
   );
   const [isNotFound, setIsNotFound] = useState(
-    R.equals(pathname, ROUTES['*'].URL)
+    R.equals(pathname, ROUTES?.['*']?.URL)
   );
 
   const switchToHome = () => {
@@ -74,12 +78,12 @@ function usePathname() {
   };
 
   useEffect(() => {
-    if (R.equals(pathname, ROUTES.HOME.URL)) switchToHome();
-    else if (R.equals(pathname, ROUTES.ABOUT.URL)) switchToAbout();
-    else if (R.equals(pathname, ROUTES.CONTACT.URL)) switchToContact();
-    else if (R.equals(pathname, ROUTES.BLOGS.URL)) switchToBlogs();
-    else if (R.equals(pathname, ROUTES.PROJECTS.URL)) switchToProjects();
-    else if (R.equals(pathname, ROUTES['*'].URL)) switchToNotFound();
+    if (R.equals(pathname, ROUTES?.HOME?.URL)) switchToHome();
+    else if (R.equals(pathname, ROUTES?.ABOUT?.URL)) switchToAbout();
+    else if (R.equals(pathname, ROUTES?.CONTACT?.URL)) switchToContact();
+    else if (R.equals(pathname, ROUTES?.BLOGS?.URL)) switchToBlogs();
+    else if (R.equals(pathname, ROUTES?.PROJECTS?.URL)) switchToProjects();
+    else if (R.equals(pathname, ROUTES?.['*']?.URL)) switchToNotFound();
   }, [pathname]);
 
   return { isHome, isAbout, isContact, isBlogs, isProjects, isNotFound };
