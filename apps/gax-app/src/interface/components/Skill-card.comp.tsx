@@ -1,6 +1,6 @@
 import { Maybe, Props } from '@gax/types';
 import { clx, cntl } from '@gax/utils';
-import styles from './styles/skill-card.comp.module.scss';
+import { skillCardStyle as styles } from '@styles';
 
 type P = {
     name?: Maybe<string>;

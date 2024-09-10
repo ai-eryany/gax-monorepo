@@ -9,9 +9,10 @@ import {
 } from '@interface';
 import { NavbarComp } from '@components';
 
+// TODO: uncomment useScroll in production!
 function App() {
     usePathNormalizer();
-    useScroll();
+    // useScroll();
     return (
         <HelmetProvider>
             <Helmet prioritizeSeoTags>
