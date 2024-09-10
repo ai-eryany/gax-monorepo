@@ -1,29 +1,29 @@
 {
-  "name": "@gax/utils",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Core Utils for the project",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint src",
-    "format": "prettier src --write",
-    "clean": "rm -rf dist",
-    "reset": "rm -rf node_modules && rm -rf package-lock.json"
-  },
-  "dependencies": {
-    "classnames": "^2.5.1",
-    "cntl": "^1.0.0"
-  },
-  "devDependencies": {
-    "@gax/types": "^1.0.0",
-    "typescript": "^5.5.4"
-  }
+    "name": "@gax/utils",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Core Utils for the project",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint src",
+        "format": "prettier src --write",
+        "clean": "rm -rf dist",
+        "reset": "rm -rf node_modules && rm -rf package-lock.json"
+    },
+    "dependencies": {
+        "classnames": "^2.5.1",
+        "cntl": "^1.0.0"
+    },
+    "devDependencies": {
+        "@gax/types": "^1.0.0",
+        "typescript": "^5.5.4"
+    }
 }

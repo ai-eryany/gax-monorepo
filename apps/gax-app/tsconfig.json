@@ -1,26 +1,29 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "strict": true,
-    "skipLibCheck": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "baseUrl": "./",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "moduleResolution": "bundler",
-    "jsx": "react-jsx",
-    "outDir": "dist",
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "strict": true,
+        "skipLibCheck": true,
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "baseUrl": "./",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "outDir": "dist",
 
-    "paths": {
-      "@app": ["src/gax.app.tsx"],
-      "@layouts": ["src/layouts"],
-      "@components": ["src/components"],
-      "@pages": ["src/pages"],
-      "@configs": ["src/configs"],
-      "@stores": ["src/stores"]
-    }
-  },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+        "paths": {
+            "@app": ["src/gax.app.tsx"],
+            "@interface": ["src/interface"],
+            "@components": ["src/interface/components"],
+            "@pages": ["src/interface/pages"],
+            "@outlets": ["src/interface/layouts"],
+            "@layouts": ["src/interface/layouts"],
+            "@configs": ["src/configs"],
+            "@assets": ["src/assets"],
+            "@data": ["src/data"]
+        }
+    },
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
 }

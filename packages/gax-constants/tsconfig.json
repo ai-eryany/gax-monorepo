@@ -1,17 +1,17 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "moduleResolution": "Node",
-    "rootDir": "src",
-    "outDir": "dist",
-    "jsx": "react-jsx"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/*.test.ts"]
+    "compilerOptions": {
+        "declaration": true,
+        "declarationMap": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "moduleResolution": "Node",
+        "rootDir": "src",
+        "outDir": "dist",
+        "jsx": "react-jsx"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "**/*.test.ts"]
 }

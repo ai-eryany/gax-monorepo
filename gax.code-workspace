@@ -1,108 +1,129 @@
 {
-  "folders": [
-    {
-      "path": "packages/gax-constants",
-    },
-    {
-      "path": "packages/gax-hooks",
-    },
-    {
-      "path": "packages/gax-types",
-    },
-    {
-      "path": "packages/gax-ui",
-    },
-    {
-      "path": "packages/gax-utils",
-    },
-    {
-      "path": "apps/gax-app",
-    },
-    {
-      "path": "doc",
-    },
-    {
-      "path": ".",
-    },
-  ],
-  "tasks": {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "build constants",
-        "type": "shell",
-        "command": "nx build @gax/constants",
-      },
-      {
-        "label": "run constants",
-        "type": "shell",
-        "command": "nx dev @gax/constants",
-      },
-      {
-        "label": "build hooks",
-        "type": "shell",
-        "command": "nx build @gax/hooks",
-      },
-      {
-        "label": "run hooks",
-        "type": "shell",
-        "command": "nx dev @gax/hooks",
-      },
-      {
-        "label": "build types",
-        "type": "shell",
-        "command": "nx build @gax/types",
-      },
-      {
-        "label": "run types",
-        "type": "shell",
-        "command": "nx dev @gax/types",
-      },
-      {
-        "label": "build ui",
-        "type": "shell",
-        "command": "nx build @gax/ui",
-      },
-      {
-        "label": "run ui",
-        "type": "shell",
-        "command": "nx dev @gax/ui",
-      },
-      {
-        "label": "build utils",
-        "type": "shell",
-        "command": "nx build @gax/utils",
-      },
-      {
-        "label": "run utils",
-        "type": "shell",
-        "command": "nx dev @gax/utils",
-      },
-      {
-        "label": "build app",
-        "type": "shell",
-        "command": "nx build @gax/app",
-      },
-      {
-        "label": "run app",
-        "type": "shell",
-        "command": "nx dev @gax/app",
-      },
-      {
-        "label": "build project",
-        "type": "shell",
-        "command": "nx run-many -t build",
-      },
-      {
-        "label": "clean project",
-        "type": "shell",
-        "command": "nx run-many -t clean",
-      },
-      {
-        "label": "reset project",
-        "type": "shell",
-        "command": "nx run-many -t reset",
-      },
+    "folders": [
+        {
+            "path": "packages/gax-constants",
+        },
+        {
+            "path": "packages/gax-hooks",
+        },
+        {
+            "path": "packages/gax-types",
+        },
+        {
+            "path": "packages/gax-ui",
+        },
+        {
+            "path": "packages/gax-utils",
+        },
+        {
+            "path": "apps/gax-app",
+        },
+        {
+            "path": "doc",
+        },
+        {
+            "path": ".",
+        },
     ],
-  },
+    "tasks": {
+        "version": "2.0.0",
+        "isBackground": true,
+        "presentation": {
+            "echo": true,
+            "reveal": "never",
+            "focus": false,
+            "panel": "shared",
+            "showReuseMessage": true,
+            "clear": false,
+        },
+        "problemMatcher": [],
+        "type": "shell",
+        "tasks": [
+            {
+                "label": "build constants",
+                "command": "nx build @gax/constants",
+                "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+            },
+            {
+                "label": "run constants",
+                "command": "nx dev @gax/constants",
+                "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+            },
+            {
+                "label": "build hooks",
+                "command": "nx build @gax/hooks",
+                "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+            },
+            {
+                "label": "run hooks",
+                "command": "nx dev @gax/hooks",
+                "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+            },
+            {
+                "label": "build types",
+                "command": "nx build @gax/types",
+                "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+            },
+            {
+                "label": "run types",
+                "command": "nx dev @gax/types",
+                "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+            },
+            {
+                "label": "build ui",
+                "command": "nx build @gax/ui",
+                "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+            },
+            {
+                "label": "run ui",
+                "command": "nx dev @gax/ui",
+                "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+            },
+            {
+                "label": "build utils",
+                "command": "nx build @gax/utils",
+                "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+            },
+            {
+                "label": "run utils",
+                "command": "nx dev @gax/utils",
+                "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+            },
+            {
+                "label": "build app",
+                "command": "nx build @gax/app",
+                "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+            },
+            {
+                "label": "run app",
+                "command": "nx dev @gax/app",
+                "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+            },
+            {
+                "label": "build project",
+                "command": "nx run-many -t build",
+                "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+            },
+            {
+                "label": "format project",
+                "command": "nx run-many -t format",
+                "icon": { "color": "terminal.ansiWhite", "id": "filter" },
+            },
+            {
+                "label": "clean project",
+                "command": "nx run-many -t clean",
+                "icon": { "color": "terminal.ansiYellow", "id": "archive" },
+            },
+            {
+                "label": "reset project",
+                "command": "nx run-many -t reset",
+                "icon": { "color": "terminal.ansiRed", "id": "debug-restart" },
+            },
+            {
+                "label": "format root",
+                "command": "nx format @gax/root",
+                "icon": { "color": "terminal.ansiWhite", "id": "filter" },
+            },
+        ],
+    },
 }

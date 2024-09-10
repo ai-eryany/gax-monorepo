@@ -8,23 +8,26 @@ type Mode = 'dev' | 'prod';
 
 type MessageTypes = 'PASS' | 'INFO' | 'WARN' | 'FAIL';
 
+type SocialMedias = 'Instagram' | 'LinkedIn' | 'Github' | 'Facebook' | 'Email';
+
 type MessageArgs = {
-  mode?: Maybe<Mode>;
-  type?: Maybe<MessageTypes>;
-  message?: Maybe<string>;
+    mode?: Maybe<Mode>;
+    type?: Maybe<MessageTypes>;
+    message?: Maybe<string>;
 };
 
 type CustomStrings = {
-  [key: string]: Maybe<string>;
+    [key: string]: Maybe<string>;
 };
 
 export {
-  Maybe,
-  SafePick,
-  SafePickObj,
-  CustomStrings,
-  FuncConfig,
-  Mode,
-  MessageTypes,
-  MessageArgs,
+    Maybe,
+    SafePick,
+    SafePickObj,
+    CustomStrings,
+    FuncConfig,
+    Mode,
+    MessageTypes,
+    MessageArgs,
+    SocialMedias,
 };

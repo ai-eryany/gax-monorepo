@@ -1,6 +1,6 @@
 export {
-  useScroll,
-  useWindow,
-  usePathname,
-  usePathNormalizer,
+    useScroll,
+    useWindow,
+    usePathname,
+    usePathNormalizer,
 } from './normalizations';

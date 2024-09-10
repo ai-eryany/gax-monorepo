@@ -7,11 +7,11 @@ import { Props } from '@gax/types';
 const modelStyle = cntl`h-auto max-w-full object-cover`;
 
 function Img(props: Props<'img'>) {
-  return (
-    <div {...props} className={clx(props.className)}>
-      <img className={clx(modelStyle)} src={props.src} alt={props.alt} />
-    </div>
-  );
+    return (
+        <div className={clx(props.className)}>
+            <img {...props} className={clx(modelStyle)} />
+        </div>
+    );
 }
 
 export { Img };

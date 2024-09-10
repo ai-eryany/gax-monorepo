@@ -20,8 +20,8 @@ import { Maybe } from '../shared';
 // * ///////////////////////// Logic starts here /////////////////////////////////
 
 type Props<
-  Type extends keyof JSX.IntrinsicElements | JSXElementConstructor<any>,
-  Type2 = object,
+    Type extends keyof JSX.IntrinsicElements | JSXElementConstructor<any>,
+    Type2 = object,
 > = ComponentProps<Type> & Type2;
 
 // * ///////////////////////// Logic ends here /////////////////////////////////
@@ -42,15 +42,15 @@ type Props<
 // * ///////////////////////// Config starts here /////////////////////////////////
 
 type Themes = {
-  LIGHT?: Maybe<'light'>;
-  DARK?: Maybe<'dark'>;
+    LIGHT?: Maybe<'light'>;
+    DARK?: Maybe<'dark'>;
 };
 
 type Config = {
-  api?: Maybe<string>;
-  appName?: Maybe<string>;
-  appTag?: Maybe<string>;
-  defaultLang?: Maybe<string>;
+    api?: Maybe<string>;
+    appName?: Maybe<string>;
+    appTag?: Maybe<string>;
+    defaultLang?: Maybe<string>;
 };
 
 type Lang = 'ar' | 'en';
@@ -62,23 +62,23 @@ type Theme = 'light' | 'dark';
 type RequestMethod = 'get' | 'post' | 'delete' | 'put';
 
 type RequestParams = {
-  url?: Maybe<string>;
-  params?: Maybe<string>;
-  method?: Maybe<RequestMethod>;
-  data?: Maybe<any>;
+    url?: Maybe<string>;
+    params?: Maybe<string>;
+    method?: Maybe<RequestMethod>;
+    data?: Maybe<any>;
 };
 
 type Navigation = {
-  name?: Maybe<string>;
-  url?: Maybe<string>;
+    name?: Maybe<string>;
+    url?: Maybe<string>;
 };
 
 type Navigations = {
-  index?: Navigation;
-  contact?: Navigation;
-  notFound?: Navigation;
-  constructions?: Navigation;
-  test?: Navigation;
+    index?: Navigation;
+    contact?: Navigation;
+    notFound?: Navigation;
+    constructions?: Navigation;
+    test?: Navigation;
 };
 
 // * ///////////////////////// Config ends here /////////////////////////////////
@@ -86,19 +86,19 @@ type Navigations = {
 // * ///////////////////////// Domain starts here /////////////////////////////////
 
 type Route = {
-  URL?: Maybe<string>;
-  NAME?: Maybe<string>;
+    URL?: Maybe<string>;
+    NAME?: Maybe<string>;
 };
 
 type Routes = {
-  HOME?: Maybe<Route>;
-  HOME_ALT?: Maybe<Route>;
-  HOME_ALT2?: Maybe<Route>;
-  CONTACT?: Maybe<Route>;
-  ABOUT?: Maybe<Route>;
-  BLOGS?: Maybe<Route>;
-  PROJECTS?: Maybe<Route>;
-  '*'?: Maybe<Route>;
+    HOME?: Maybe<Route>;
+    HOME_ALT?: Maybe<Route>;
+    HOME_ALT2?: Maybe<Route>;
+    CONTACT?: Maybe<Route>;
+    ABOUT?: Maybe<Route>;
+    BLOGS?: Maybe<Route>;
+    PROJECTS?: Maybe<Route>;
+    '*'?: Maybe<Route>;
 };
 
 //* /////////////////////////////////////////////////////////////////////
@@ -114,16 +114,16 @@ type Routes = {
 //* /////////////////////////////////////////////////////////////////////
 //* /////////////////////////////////////////////////////////////////////
 export {
-  Props,
-  Themes,
-  Config,
-  Lang,
-  Dir,
-  Theme,
-  RequestMethod,
-  RequestParams,
-  Navigation,
-  Navigations,
-  Route,
-  Routes,
+    Props,
+    Themes,
+    Config,
+    Lang,
+    Dir,
+    Theme,
+    RequestMethod,
+    RequestParams,
+    Navigation,
+    Navigations,
+    Route,
+    Routes,
 };

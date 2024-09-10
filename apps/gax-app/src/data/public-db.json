@@ -1,0 +1,194 @@
+{
+    "intros": [
+        {
+            "id": "1",
+            "firstName": "Aiman",
+            "lastName": "Al Eryany",
+            "intro": "Hi, My name is",
+            "longerIntro": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rem enim dolor, magni esse libero!"
+        }
+    ],
+    "abouts": [
+        {
+            "id": "1",
+            "aboutTitle": "About Me",
+            "aboutDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rem enim dolor, magni esse libero!",
+            "aboutDescription2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rem enim dolor, magni esse libero!"
+        }
+    ],
+    "skills": [
+        {
+            "id": "1",
+            "name": "Bash",
+            "level": 4,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
+            "description": "Bash it!"
+        },
+        {
+            "id": "2",
+            "name": "CSS",
+            "level": 9,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+            "description": "CSS is the way to style"
+        },
+        {
+            "id": "3",
+            "name": "Elixir",
+            "level": 4,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elixir/elixir-original.svg",
+            "description": "If languages were women, this one would be my love"
+        },
+        {
+            "id": "4",
+            "name": "Express",
+            "level": 7,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+            "description": "As much as I hate Espresso, I hate Expresso."
+        },
+        {
+            "id": "5",
+            "name": "Git",
+            "level": 7,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+            "description": "Great Versioning system in my opinion"
+        },
+        {
+            "id": "6",
+            "name": "Github",
+            "level": 7,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+            "description": "Git with benefits"
+        },
+        {
+            "id": "7",
+            "name": "Html",
+            "level": 9,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+            "description": "I am starting to believe that html is a programming language"
+        },
+        {
+            "id": "8",
+            "name": "Java",
+            "level": 5,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+            "description": "Once upon a time when I had the time to learn such a language"
+        },
+        {
+            "id": "9",
+            "name": "Javascript",
+            "level": 0,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+            "description": "Who made this language?"
+        },
+        {
+            "id": "10",
+            "name": "Lambda",
+            "level": 8,
+            "icon": "/images/skills/lambda.svg",
+            "description": "Half life you say? I am all in"
+        },
+        {
+            "id": "11",
+            "name": "MongoDB",
+            "level": 7,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+            "description": "Lowkey the best DBMS"
+        },
+        {
+            "id": "12",
+            "name": "Node.js",
+            "level": 8,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+            "description": "Who thought using JS everywhere was a good idea?"
+        },
+        {
+            "id": "13",
+            "name": "OOP",
+            "level": 7,
+            "icon": "/images/skills/oop.svg",
+            "description": "Yes, I compose my own depression!"
+        },
+        {
+            "id": "14",
+            "name": "Postmon",
+            "level": 7,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+            "description": "Great stuff"
+        },
+        {
+            "id": "15",
+            "name": "Python",
+            "level": 4,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+            "description": "Once upon a time when I had the time to learn such a language"
+        },
+        {
+            "id": "16",
+            "name": "React",
+            "level": 8,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+            "description": "I actually like React"
+        },
+        {
+            "id": "17",
+            "name": "SASS",
+            "level": 9,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+            "description": "CSS with benefits"
+        },
+        {
+            "id": "18",
+            "name": "Tailwindcss",
+            "level": 7,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+            "description": "Wouldn't say CSS with benefits but it's somewhere around"
+        },
+        {
+            "id": "19",
+            "name": "Typescript",
+            "level": 1,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+            "description": "Good stuff"
+        },
+        {
+            "id": "20",
+            "name": "Vim",
+            "level": 8,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg",
+            "description": "Yes, I was that nerd once upon a time.. Not anymore .. I am more into writing code"
+        },
+        {
+            "id": "20",
+            "name": "Vitejs",
+            "level": 8,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+            "description": "Finally someone who is doing it the right way in the JS clown world"
+        },
+        {
+            "id": "21",
+            "name": "Vscode",
+            "level": 8,
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+            "description": "This is what I meant by writing code (Check Vim description)"
+        }
+    ],
+    "socials": [
+        {
+            "id": "1",
+            "type": "Instagram",
+            "username": "eryano99",
+            "link": "https://www.instagram.com/eryano99/"
+        }
+    ],
+    "works": [
+        {
+            "id": "1",
+            "name": "airvnv",
+            "description": "Properties Listing Application",
+            "image": "",
+            "skills": ["1"],
+            "repo": "https://github.com/aiman99aleryany/airvnv.git",
+            "demo": "https://project-airvnv.netlify.app/"
+        }
+    ]
+}
