@@ -25,8 +25,11 @@
     }
 
     html {
+        overflow-y: scroll;
+        -webkit-tap-highlight-color: transparent !important;
         scroll-behavior: smooth;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     html:focus-within {
@@ -45,9 +48,49 @@
         isolation: isolate;
     }
 
+    ol,
+    ul {
+        list-style-type: none;
+    }
+
     li {
         @apply cursor-pointer;
         @apply px-4;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:active,
+    a:hover {
+        outline: 0;
+    }
+
+    button,
+    select {
+        text-transform: none;
+    }
+
+    button,
+    html input[type='button'],
+    input[type='reset'],
+    input[type='submit'] {
+        -webkit-appearance: button;
+        cursor: pointer;
+        overflow: visible;
+    }
+
+    button[disabled],
+    html input[disabled] {
+        cursor: default;
+    }
+
+    .prevent-select {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+        pointer-events: none;
     }
 
     .content-dev {
