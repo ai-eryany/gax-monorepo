@@ -14,14 +14,17 @@
 
         "paths": {
             "@app": ["src/gax.app.tsx"],
+            "@configs": ["src/configs"],
+            "@data": ["src/data"],
+
+            // Interface
             "@interface": ["src/interface"],
             "@components": ["src/interface/components"],
             "@pages": ["src/interface/pages"],
-            "@outlets": ["src/interface/layouts"],
+            "@outlets": ["src/interface/outlets"],
             "@layouts": ["src/interface/layouts"],
-            "@configs": ["src/configs"],
-            "@assets": ["src/assets"],
-            "@data": ["src/data"]
+            "@styles": ["src/interface/styles"],
+            "@styles/globals/*": ["src/interface/styles/globals/*"]
         }
     },
     "include": ["src"],
