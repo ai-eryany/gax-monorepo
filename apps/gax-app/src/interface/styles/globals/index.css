@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Specify the range of available weights for a variable font */
+    font-display: swap; /* Optional: Improves rendering performance */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/raleway/Raleway-Italic-VariableFont_wght.woff2')
+        format('truetype');
+    font-weight: 100 900;
+    font-display: swap; /* Optional: Improves rendering performance */
+    font-style: italic; /* Marks this as the italic version */
+}
+
+@layer base {
+    :root {
+        font-size: 62.5%;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+    }
+
+    html:focus-within {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-size: 16px;
+        @apply font-[Raleway];
+    }
+
+    header,
+    main,
+    footer {
+        position: relative;
+        isolation: isolate;
+    }
+
+    li {
+        @apply cursor-pointer;
+        @apply px-4;
+    }
+
+    .content-dev {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+    }
+
+    .content-dev:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(112, 157, 255, 0.8),
+            hsla(242, 74%, 61%, 0.8)
+        );
+    }
+}

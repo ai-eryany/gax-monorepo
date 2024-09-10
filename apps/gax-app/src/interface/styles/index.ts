@@ -1,0 +1,1 @@
+export { skillCardStyle } from './components';

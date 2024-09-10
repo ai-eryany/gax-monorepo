@@ -1,10 +1,5 @@
-export { HomePage } from './pages';
-export {
-    Headerlayout,
-    NavbarLayout,
-    MainLayout,
-    FooterLayout,
-} from './layouts';
+export { HomePage } from '@pages';
+export { Headerlayout, NavbarLayout, MainLayout, FooterLayout } from '@layouts';
 
 export {
     HeroComp,
@@ -12,6 +7,8 @@ export {
     ContactComp,
     SkillsComp,
     WorkComp,
-} from './components';
+} from '@components';
 
-export { HomeOutlet } from './outlets';
+export { skillCardStyle } from '@styles';
+
+export { HomeOutlet } from '@outlets';
