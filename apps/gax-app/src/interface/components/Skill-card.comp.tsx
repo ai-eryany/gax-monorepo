@@ -1,6 +1,7 @@
 import { Maybe, Props } from '@gax/types';
 import { clx, cntl } from '@gax/utils';
 import { skillCardStyle as styles } from '@styles';
+import { Img } from '@gax/ui';
 
 type P = {
     name?: Maybe<string>;
@@ -17,11 +18,12 @@ function SkillCardComp(props: Props<'img', P>) {
         <div className={clx(styles.flipBox)}>
             <div className={clx(innerStyle, styles.flipBoxInner)}>
                 <div className={clx(styles.flipBoxFront)}>
-                    <img {...props} className={clx(styles.imgBox)} />
+                    <div className={clx(styles.frontMask)}></div>
+                    <Img {...props} className={clx(styles.imgBox)} />
                     <p className={clx(styles.txtBox)}>{props.name}</p>
                 </div>
                 <div className={clx(styles.flipBoxBack)}>
-                    <p className={clx(styles.txtBox)}>{props.description}</p>
+                    <p className={clx(styles.descBox)}>{props.description}</p>
                 </div>
             </div>
         </div>
