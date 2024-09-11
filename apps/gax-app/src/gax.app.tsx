@@ -1,13 +1,20 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { clx, cntl } from '@gax/utils';
 import { Outlet } from 'react-router-dom';
-import { usePathNormalizer, useScroll } from '@gax/hooks';
+import { usePathNormalizer } from '@gax/hooks';
 import {
-    Headerlayout,
+    HeaderLayout,
     NavbarLayout,
     MainLayout,
     FooterLayout,
+    SidebarLayout,
+    NavbarArea,
+    SidebarArea,
 } from '@interface';
-import { NavbarComp } from '@components';
+
+const style = cntl`
+    bg-primary
+`;
 
 // TODO: uncomment useScroll in production!
 function App() {
@@ -18,12 +25,16 @@ function App() {
             <Helmet prioritizeSeoTags>
                 <html dir="ltr" lang="en" className="" />
                 <title>GAX</title>
+                <body className={clx(style)} />
             </Helmet>
-            <Headerlayout>
+            <HeaderLayout>
                 <NavbarLayout>
-                    <NavbarComp />
+                    <NavbarArea />
                 </NavbarLayout>
-            </Headerlayout>
+            </HeaderLayout>
+            <SidebarLayout>
+                <SidebarArea />
+            </SidebarLayout>
             <MainLayout>
                 <Outlet />
             </MainLayout>

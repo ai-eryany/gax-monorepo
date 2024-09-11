@@ -1,30 +1,36 @@
 import { HomePage } from '@pages';
 import {
-    HeroComp,
-    AboutComp,
-    ContactComp,
-    SkillsComp,
-    WorkComp,
+    HeroArea,
+    AboutArea,
+    ContactArea,
+    SkillsArea,
+    WorkArea,
 } from '@components';
 import { Container } from '@gax/ui';
-import { clx } from '@gax/utils';
+import { clx, cntl } from '@gax/utils';
 import { useWindow } from '@gax/hooks';
+import { elementFadeInStyle } from '@styles';
+
+const style = cntl`
+    max-w-7xl
+    
+`;
 
 function HomeOutlet() {
     const [windowWidth] = useWindow();
 
     return (
         <HomePage>
-            {/* 300 is the side social media width when hovered on */}
             <Container
                 style={{ width: windowWidth - 300 }}
-                className={clx('max-w-7xl')}
+                className={clx(style, elementFadeInStyle.fade)}
             >
-                <HeroComp />
-                <AboutComp />
-                <SkillsComp />
-                <WorkComp />
-                <ContactComp />
+                {/* 300 is the side social media width when hovered on */}
+                <HeroArea />
+                <AboutArea />
+                {/* <SkillsSection /> */}
+                {/* <WorkSection /> */}
+                {/* <ContactSection /> */}
             </Container>
         </HomePage>
     );

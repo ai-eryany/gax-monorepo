@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-function MobileNavComp() {
+function MobileNavbarList() {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav((state) => !state);
 
@@ -29,4 +29,4 @@ function MobileNavComp() {
     );
 }
 
-export { MobileNavComp };
+export { MobileNavbarList };

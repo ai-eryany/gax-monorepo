@@ -1,4 +1,4 @@
-function ContactComp() {
+function ContactArea() {
     return (
         <div className="flex h-screen w-full items-center justify-center p-4">
             <form
@@ -41,4 +41,4 @@ function ContactComp() {
     );
 }
 
-export { ContactComp };
+export { ContactArea };

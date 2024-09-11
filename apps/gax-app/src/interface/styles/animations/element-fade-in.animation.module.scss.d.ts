@@ -1,4 +1,4 @@
 declare const classNames: {
-  readonly fade: 'fade';
+    readonly fade: 'fade';
 };
 export = classNames;

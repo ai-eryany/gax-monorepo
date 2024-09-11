@@ -1,4 +1,4 @@
-function AboutComp() {
+function AboutArea() {
     return (
         <div className="h-screen w-full text-gray-300">
             <div className="flex h-full w-full flex-col items-center justify-center">
@@ -34,4 +34,4 @@ function AboutComp() {
     );
 }
 
-export { AboutComp };
+export { AboutArea };
