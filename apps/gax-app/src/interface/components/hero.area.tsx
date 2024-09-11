@@ -1,10 +1,10 @@
 import { HiArrowNarrowRight } from 'react-icons/hi';
 
-function HeroComp() {
+function HeroArea() {
     return (
-        <div className="h-screen w-full">
+        <>
             {/* Container */}
-            <div className="mx-auto flex h-full flex-col justify-center px-8">
+            <div className="mx-auto flex h-full w-full flex-col justify-center px-8">
                 <p className="text-pink-600">Hi, my name is</p>
                 <h1 className="text-4xl font-bold text-[#ccd6f6] sm:text-7xl">
                     Aiman Al Eryany
@@ -27,8 +27,8 @@ function HeroComp() {
                     </button>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
-export { HeroComp };
+export { HeroArea };

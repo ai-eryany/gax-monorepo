@@ -4,7 +4,7 @@ import { useState } from 'react';
 // Data
 import { Db } from '@data';
 
-function WorkComp() {
+function WorkArea() {
     const [projects] = useState(Db.works);
 
     return (
@@ -59,4 +59,4 @@ function WorkComp() {
     );
 }
 
-export { WorkComp };
+export { WorkArea };

@@ -3,7 +3,13 @@ import { Props } from '@gax/types';
 import { clx, cntl } from '@gax/utils';
 
 const style = cntl`
-    bg-primary-900
+    relative
+    top-[80px]
+    flex
+    flex-col
+    items-center
+    justify-center
+    p-4
 `;
 
 function MainLayout(props: Props<'main'>) {

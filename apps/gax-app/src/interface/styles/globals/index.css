@@ -48,14 +48,10 @@
         isolation: isolate;
     }
 
-    ol,
-    ul {
-        list-style-type: none;
-    }
-
     li {
         @apply cursor-pointer;
         @apply px-4;
+        list-style-type: none;
     }
 
     a {

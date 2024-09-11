@@ -1,0 +1,17 @@
+.fade {
+    position: relative;
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 700ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

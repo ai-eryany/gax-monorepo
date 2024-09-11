@@ -1,12 +1,20 @@
 export { HomePage } from '@pages';
-export { Headerlayout, NavbarLayout, MainLayout, FooterLayout } from '@layouts';
+export {
+    HeaderLayout,
+    NavbarLayout,
+    MainLayout,
+    FooterLayout,
+    SidebarLayout,
+} from '@layouts';
 
 export {
-    HeroComp,
-    AboutComp,
-    ContactComp,
-    SkillsComp,
-    WorkComp,
+    HeroArea,
+    AboutArea,
+    ContactArea,
+    SkillsArea,
+    WorkArea,
+    NavbarArea,
+    SidebarArea,
 } from '@components';
 
 export { skillCardStyle } from '@styles';

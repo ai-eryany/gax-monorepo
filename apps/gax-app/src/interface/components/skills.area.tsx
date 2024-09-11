@@ -1,7 +1,7 @@
-import { SkillCardComp } from './Skill-card.comp';
+import { SkillCard } from './Skill.card';
 import { Db } from '@data';
 
-function SkillsComp() {
+function SkillsArea() {
     return (
         <div className="h-screen w-full text-gray-300">
             {/* Container */}
@@ -17,7 +17,7 @@ function SkillsComp() {
 
                 <div className="flex w-full flex-wrap gap-6 py-8">
                     {Db.skills.map((skill) => (
-                        <SkillCardComp
+                        <SkillCard
                             name={skill.name}
                             src={skill.icon}
                             description={skill.description}
@@ -29,4 +29,4 @@ function SkillsComp() {
     );
 }
 
-export { SkillsComp };
+export { SkillsArea };

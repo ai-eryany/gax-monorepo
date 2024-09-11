@@ -1,8 +1,34 @@
 // Types
 import { Props } from '@gax/types';
+import { clx, cntl } from '@gax/utils';
+import { useHeaderController } from '@gax/hooks';
 
-function Headerlayout(props: Props<'header'>) {
-    return <header {...props} className="fixed z-10 h-[80px] w-full" />;
+const style = cntl`
+    fixed
+    z-10
+    flex
+    w-full
+    items-center
+    justify-center
+    overflow-hidden
+    bg-secondary-900
+    shadow-md
+    duration-300
+`;
+
+function HeaderLayout(props: Props<'header'>) {
+    const [isVisible] = useHeaderController();
+
+    return (
+        <header
+            {...props}
+            className={clx(
+                style,
+                props.className,
+                isVisible ? 'translate-y-0' : '-translate-y-full'
+            )}
+        />
+    );
 }
 
-export { Headerlayout };
+export { HeaderLayout };
