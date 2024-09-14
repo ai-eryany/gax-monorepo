@@ -17,10 +17,15 @@ const home: RouteObject = {
     element: <HomeOutlet />,
 };
 
+const notFound: RouteObject = {
+    path: clx(ROUTES?.['*']?.URL),
+    element: <h1>Page Not Found</h1>,
+};
+
 const app: RouteObject = {
     path: clx(ROUTES?.HOME?.URL),
     element: <App />,
-    children: [home],
+    children: [home, notFound],
 };
 
 export function surveReactVite(ele: Element) {

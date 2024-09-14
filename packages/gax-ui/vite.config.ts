@@ -36,6 +36,14 @@ function viteConfig(args: ViteConfigInput) {
 
                 rollupOptions: {
                     plugins: [terser(terserOptions)],
+                    external: ['react', 'react-dom', 'react-router-dom'],
+                    output: {
+                        globals: {
+                            react: 'React',
+                            'react-dom': 'ReactDOM',
+                            'react-router-dom': 'ReactRouterDOM',
+                        },
+                    },
                 },
             },
         });

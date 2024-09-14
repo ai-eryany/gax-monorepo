@@ -9,7 +9,7 @@
         "skipLibCheck": true,
         "strict": true,
         "esModuleInterop": true,
-        "moduleResolution": "Bundler",
+        "moduleResolution": "Node",
         "resolveJsonModule": true,
         "baseUrl": "./",
         "rootDir": "src",

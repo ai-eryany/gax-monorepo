@@ -40,6 +40,7 @@ function viteConfig(args: ViteConfigInput) {
                 },
             },
             build: {
+                sourcemap: true,
                 cssMinify: true,
                 rollupOptions: {
                     output: {

@@ -71,112 +71,186 @@
                 "label": "build use-cases",
                 "command": "nx build @gax/use-cases",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:use-cases}",
+                },
             },
             {
                 "label": "dev use-cases",
                 "command": "nx dev @gax/use-cases",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:use-cases}",
+                },
             },
             {
                 "label": "build data-access",
                 "command": "nx build @gax/data-access",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:data-access}",
+                },
             },
             {
                 "label": "dev data-access",
                 "command": "nx dev @gax/data-access",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:data-access}",
+                },
             },
 
             {
                 "label": "build api",
                 "command": "nx build @gax/api",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:api}",
+                },
             },
             {
                 "label": "dev api",
                 "command": "nx dev @gax/api",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:api}",
+                },
             },
             {
                 "label": "build entities",
                 "command": "nx build @gax/entities",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:entities}",
+                },
             },
             {
                 "label": "dev entities",
                 "command": "nx dev @gax/entities",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:entities}",
+                },
             },
             {
                 "label": "build adapters",
                 "command": "nx build @gax/adapters",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:adapters}",
+                },
             },
             {
                 "label": "dev adapters",
                 "command": "nx dev @gax/adapters",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:adapters}",
+                },
             },
             {
                 "label": "build constants",
                 "command": "nx build @gax/constants",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:constants}",
+                },
             },
             {
                 "label": "dev constants",
                 "command": "nx dev @gax/constants",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:constants}",
+                },
             },
             {
                 "label": "build hooks",
                 "command": "nx build @gax/hooks",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:hooks}",
+                },
             },
             {
                 "label": "dev hooks",
                 "command": "nx dev @gax/hooks",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:hooks}",
+                },
             },
             {
                 "label": "build types",
                 "command": "nx build @gax/types",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:types}",
+                },
             },
             {
                 "label": "dev types",
                 "command": "nx dev @gax/types",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:types}",
+                },
             },
             {
                 "label": "build ui",
                 "command": "nx build @gax/ui",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:ui}",
+                },
             },
             {
                 "label": "dev ui",
                 "command": "nx dev @gax/ui",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:ui}",
+                },
             },
             {
                 "label": "build utils",
                 "command": "nx build @gax/utils",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:utils}",
+                },
             },
             {
                 "label": "dev utils",
                 "command": "nx dev @gax/utils",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:utils}",
+                },
             },
             {
                 "label": "build vite-react",
                 "command": "nx build @gax/vite-react",
                 "icon": { "color": "terminal.ansiGreen", "id": "combine" },
+                "options": {
+                    "cwd": "${workspaceFolder:vite-react}",
+                },
             },
             {
                 "label": "dev vite-react",
                 "command": "nx dev @gax/vite-react",
                 "icon": { "color": "terminal.ansiYellow", "id": "debug-start" },
+                "options": {
+                    "cwd": "${workspaceFolder:vite-react}",
+                },
+            },
+            {
+                "label": "preview vite-react",
+                "command": "nx preview @gax/vite-react",
+                "icon": { "color": "terminal.ansiCyan", "id": "preview" },
+                "options": {
+                    "cwd": "${workspaceFolder:vite-react}",
+                },
             },
             {
                 "label": "build project",
