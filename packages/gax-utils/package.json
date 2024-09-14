@@ -10,20 +10,19 @@
         "dist"
     ],
     "scripts": {
-        "build": "tsc",
-        "dev": "tsc -w",
+        "dev": "tsc && vite build --watch",
+        "build": "tsc && vite build",
         "typecheck": "tsc --noEmit",
         "lint": "eslint src",
         "format": "prettier src --write",
         "clean": "rm -rf dist",
-        "reset": "rm -rf node_modules && rm -rf package-lock.json"
+        "reset": "rm -rf node_modules && rm -rf package-lock.json && rm -rf dist"
     },
     "dependencies": {
         "classnames": "^2.5.1",
         "cntl": "^1.0.0"
     },
     "devDependencies": {
-        "@gax/types": "^1.0.0",
-        "typescript": "^5.5.4"
+        "@gax/types": "^1.0.0"
     }
 }

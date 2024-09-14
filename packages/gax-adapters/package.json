@@ -1,0 +1,21 @@
+{
+    "name": "@gax/adapters",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Adapters from gax",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "tsc && vite build --watch",
+        "build": "tsc && vite build",
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint src",
+        "format": "prettier src --write",
+        "clean": "rm -rf dist",
+        "reset": "rm -rf node_modules && rm -rf package-lock.json && rm -rf dist"
+    }
+}

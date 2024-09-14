@@ -1,33 +1,31 @@
-type Maybe<T> = NonNullable<T> | undefined | null;
-type SafePick<T, K extends keyof NonNullable<T>> = NonNullable<T>[K];
-type SafePickObj<T, K extends keyof NonNullable<T>> = Pick<NonNullable<T>, K>;
+export type Maybe<T> = NonNullable<T> | undefined | null;
+export type SafePick<T, K extends keyof NonNullable<T>> = NonNullable<T>[K];
+export type SafePickObj<T, K extends keyof NonNullable<T>> = Pick<
+    NonNullable<T>,
+    K
+>;
 
-type FuncConfig<ArgsType, ReturnValue> = (args?: ArgsType) => ReturnValue;
+export type FuncConfig<ArgsType, ReturnValue> = (
+    args?: ArgsType
+) => ReturnValue;
 
-type Mode = 'dev' | 'prod';
+export type Mode = 'dev' | 'prod';
 
-type MessageTypes = 'PASS' | 'INFO' | 'WARN' | 'FAIL';
+export type MessageTypes = 'PASS' | 'INFO' | 'WARN' | 'FAIL';
 
-type SocialMedias = 'Instagram' | 'LinkedIn' | 'Github' | 'Facebook' | 'Email';
+export type SocialMedias =
+    | 'Instagram'
+    | 'LinkedIn'
+    | 'Github'
+    | 'Facebook'
+    | 'Email';
 
-type MessageArgs = {
+export type MessageArgs = {
     mode?: Maybe<Mode>;
     type?: Maybe<MessageTypes>;
     message?: Maybe<string>;
 };
 
-type CustomStrings = {
+export type CustomStrings = {
     [key: string]: Maybe<string>;
-};
-
-export {
-    Maybe,
-    SafePick,
-    SafePickObj,
-    CustomStrings,
-    FuncConfig,
-    Mode,
-    MessageTypes,
-    MessageArgs,
-    SocialMedias,
 };

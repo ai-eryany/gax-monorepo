@@ -10,13 +10,13 @@
         "dist"
     ],
     "scripts": {
-        "build": "tsc",
-        "dev": "tsc -w",
+        "dev": "tsc && vite build --watch",
+        "build": "tsc && vite build",
         "typecheck": "tsc --noEmit",
         "lint": "eslint src",
         "format": "prettier src --write",
         "clean": "rm -rf dist",
-        "reset": "rm -rf node_modules && rm -rf package-lock.json"
+        "reset": "rm -rf node_modules && rm -rf package-lock.json && rm -rf dist"
     },
     "dependencies": {
         "@gax/utils": "^1.0.0",
@@ -24,8 +24,6 @@
         "react-router-dom": "^6.25.1"
     },
     "devDependencies": {
-        "@gax/types": "^1.0.0",
-        "@types/react": "^18.3.3",
-        "typescript": "^5.5.4"
+        "@gax/types": "^1.0.0"
     }
 }

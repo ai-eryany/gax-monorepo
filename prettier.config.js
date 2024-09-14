@@ -5,6 +5,9 @@ const config = {
     semi: true,
     singleQuote: true,
     printWidth: 80,
+    plugins: ['prettier-plugin-tailwindcss'],
+    tailwindFunctions: ['cntl', 'clx'],
+    tailwindPreserveWhitespace: true,
 };
 
 export default config;
