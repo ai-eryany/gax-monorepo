@@ -1,7 +1,4 @@
-// Packages
 import { useState } from 'react';
-
-// Data
 import { Db } from '@gax/data-access';
 
 export function WorkArea() {

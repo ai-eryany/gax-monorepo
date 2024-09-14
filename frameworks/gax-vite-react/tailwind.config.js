@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-// TODO: test removing the packages from content, because we are at monorepo
+
 export default {
     darkMode: 'class',
     content: [
-        './src/**/*.{astro,js,ts,jsx,tsx,html}',
-        '../../packages/**/*.{astro,js,ts,jsx,tsx,html}',
+        './src/**/*.{js,ts,jsx,tsx}',
+        '../../packages/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
         extend: {

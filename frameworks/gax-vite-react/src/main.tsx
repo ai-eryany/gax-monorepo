@@ -1,4 +1,4 @@
-import '@styles/globals/index.css';
+import '@styles/globals/index.scss';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
@@ -9,8 +9,8 @@ import {
 import { App } from './App';
 import { clx } from '@gax/utils';
 import { ROUTES } from '@gax/constants';
-import { HomeOutlet } from './outlets';
-import { appConfig } from './configs';
+import { HomeOutlet } from '@outlets';
+import { appConfig } from '@configs';
 
 const home: RouteObject = {
     index: true,
