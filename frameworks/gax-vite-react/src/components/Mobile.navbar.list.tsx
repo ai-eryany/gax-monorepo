@@ -8,15 +8,15 @@ type P = {
 };
 
 const style = cntl`
+    bg-secondary-900
     absolute
     top-0
     flex
     h-svh
-    w-[50%]
+    w-[70%]
     flex-col
     items-center
     justify-center
-    bg-secondary-900
     shadow-md
     duration-300
 `;
@@ -39,14 +39,14 @@ const bgContainerStyle = cntl`
 `;
 
 const bgStyle = cntl`
+    bg-primary
     h-full
     w-full
-    bg-primary
     duration-300
 `;
 
 const activeBgStyle = cntl`
-    opacity-100
+    opacity-70
 `;
 
 const hideBgStyle = cntl`
@@ -57,27 +57,29 @@ export function MobileNavbarList(props: Props<'ul', P>) {
     const { isClicked, isVisible, ...rest } = props;
 
     return (
-        <ul
-            {...rest}
-            className={clx(
-                style,
-                isClicked && isVisible ? activeStyle : hideStyle,
-                props.className
-            )}
-        >
-            <MobileNavbarLink className={clx(bgContainerStyle)}>
+        <>
+            <div className={clx(bgContainerStyle)}>
                 <div
                     className={clx(
                         bgStyle,
                         isClicked && isVisible ? activeBgStyle : hideBgStyle
                     )}
                 ></div>
-            </MobileNavbarLink>
-            <MobileNavbarLink>Home</MobileNavbarLink>
-            <MobileNavbarLink>About</MobileNavbarLink>
-            <MobileNavbarLink>Skills</MobileNavbarLink>
-            <MobileNavbarLink>Work</MobileNavbarLink>
-            <MobileNavbarLink>Contact</MobileNavbarLink>
-        </ul>
+            </div>
+            <ul
+                {...rest}
+                className={clx(
+                    style,
+                    isClicked && isVisible ? activeStyle : hideStyle,
+                    props.className
+                )}
+            >
+                <MobileNavbarLink>Home</MobileNavbarLink>
+                <MobileNavbarLink>About</MobileNavbarLink>
+                <MobileNavbarLink>Skills</MobileNavbarLink>
+                <MobileNavbarLink>Work</MobileNavbarLink>
+                <MobileNavbarLink>Contact</MobileNavbarLink>
+            </ul>
+        </>
     );
 }
