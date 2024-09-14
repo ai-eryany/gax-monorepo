@@ -2,14 +2,24 @@
 import { clx, cntl } from '@gax/utils';
 
 // Types
-import { Props } from '@gax/types';
+import { Maybe, Props } from '@gax/types';
 
-const modelStyle = cntl`h-auto max-w-full object-cover`;
+type P = {
+    imgClassName?: Maybe<string>;
+};
 
-function Img(props: Props<'img'>) {
+const imgStyle = cntl`
+    h-auto 
+    max-w-full 
+    object-cover
+`;
+
+function Img(props: Props<'img', P>) {
+    const { imgClassName, ...rest } = props;
+
     return (
         <div className={clx(props.className)}>
-            <img {...props} className={clx(modelStyle)} />
+            <img {...rest} className={clx(imgStyle, imgClassName)} />
         </div>
     );
 }

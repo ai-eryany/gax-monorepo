@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "strict": true,
+        "skipLibCheck": true,
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "baseUrl": "./",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "outDir": "dist",
+
+        "paths": {
+            "@components/*": ["src/components/*"],
+            "@components": ["src/components"],
+
+            "@configs/*": ["src/configs/*"],
+            "@configs": ["src/configs"],
+
+            "@layouts/*": ["src/layouts/*"],
+            "@layouts": ["src/layouts"],
+
+            "@outlets/*": ["src/layouts/*"],
+            "@outlets": ["src/outlets"],
+
+            "@pages/*": ["src/pages/*"],
+            "@pages": ["src/pages"],
+
+            "@services/*": ["src/services/*"],
+            "@services": ["src/services"],
+
+            "@styles/*": ["src/styles/*"],
+            "@styles": ["src/styles"]
+        }
+    },
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+}
